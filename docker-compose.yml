@@ -1,0 +1,9 @@
+version: '2'
+services:
+  angular_service_worker:
+    build:
+      context: .
+    ports:
+      - "4443:443"
+    volumes:
+      - ./dist:/usr/share/nginx/html
